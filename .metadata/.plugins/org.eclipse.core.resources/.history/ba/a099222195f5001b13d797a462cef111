@@ -1,0 +1,13 @@
+package com.io;
+
+public class ScannerDemo3 {
+	public static void main(String[] args) {
+		try {
+			File file = new File("out.txt");
+			Scanner sc = new Scanner(file);
+		} catch (Exception e) {
+
+		}
+	}
+
+}

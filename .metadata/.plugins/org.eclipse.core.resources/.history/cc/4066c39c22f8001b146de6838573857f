@@ -1,0 +1,16 @@
+package com.test01;
+
+public class Hundai extends Car {
+
+	@Override
+	public void feeling() {
+		name = brand_name;
+		System.out.println("발을 이용해 조립합니다.");
+		System.out.println("디자인이 점점 산으로 갑니다.");
+	}
+	public void function(String brand_name) {
+		super.function(brand_name);
+		System.out.println(brand_name + " : 결함이 많습니다");
+	}
+
+}

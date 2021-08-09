@@ -1,0 +1,12 @@
+package com.test01;
+
+public abstract class Car {
+	String brand_name;
+	public void function(String brand_name) {
+		this.brand_name = brand_name;
+		System.out.println(brand_name + "차는 달립니다.");
+	}
+	//추상메소드 : 상속받는 자식클래스에서 받드시 오버라이딩 해야 한다.
+	public abstract void feeling();
+	
+}

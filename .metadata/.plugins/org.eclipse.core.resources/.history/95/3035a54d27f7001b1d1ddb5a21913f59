@@ -1,0 +1,13 @@
+package singleton;
+//메모리영역(Heap)에 객체를 한 번만 생성.
+//싱글톤은 디자인 패턴의 하나.
+public class Singleton {
+	
+	//객체를 확인할 주소를 담아줄 변수 선언.
+	private static Singleton singleton;
+	
+	private Singleton() {
+		
+	}
+
+}

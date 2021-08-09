@@ -1,0 +1,7 @@
+127.0.0.1 - - [28/May/2021:10:56:29 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [28/May/2021:10:56:29 +0900] "GET /Weather/ HTTP/1.1" 200 340
+0:0:0:0:0:0:0:1 - - [28/May/2021:10:56:29 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [28/May/2021:10:56:46 +0900] "GET /Weather//Weather.do?command=weather_main HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [28/May/2021:10:56:49 +0900] "GET /Weather//weather/weather_view.jsp HTTP/1.1" 200 3675
+0:0:0:0:0:0:0:1 - - [28/May/2021:10:56:49 +0900] "GET /Weather/resources/image_weather2/%EB%B9%84.png HTTP/1.1" 200 15963
+0:0:0:0:0:0:0:1 - - [28/May/2021:10:56:49 +0900] "GET /Weather/resources/image_weather2/%EB%A7%91%EC%9D%8C.png HTTP/1.1" 200 37119

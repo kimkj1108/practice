@@ -1,0 +1,6 @@
+package com.singleton;
+
+public class Mtest {
+	Singleton st01 = Singleton.getInstance();
+
+}
