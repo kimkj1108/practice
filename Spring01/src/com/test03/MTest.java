@@ -27,7 +27,7 @@ public class MTest {
  * 
  * ApplicationContext 객체는 스프링 컨테이너의 인스턴스 이다.->인스턴스는 객체이다/결국 ApplicationContext가 스프링 컨테이너다 라는 뜻이다.
  *  스프링은 ApplicationContext 인터페이스의 몇가지기본 구현을 제공한다.--?ApplicationContext는 인터페이스이다.
- *  그중, ClassPathXmlApplicationContext는 XML형식의 독립형 어플리케이션에 적합, 
+ *  그중, ClassPathXmlApplicationContext는 XML형식의 독립형 어플리케이션에 적합,-->xml의 경로를 읽어서 ApplicationContext를 객체화 시킬꺼야
  * (지정된Classpath에서 xml파일을 읽어서 객체 생성) 
  *-------
  * Container : 담는 그릇(bean을 저장하고 관리하는 객체)

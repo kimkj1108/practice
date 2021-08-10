@@ -383,3 +383,19 @@
 2021-08-10 18:50:52,488 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspaces\Workspace_Test\Spring01\src\main\resources
 2021-08-10 18:50:52,489 [Worker-102: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-08-10 18:50:52,490 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspaces\Workspace_Test\Spring01\src\test\resources
+2021-08-10 18:54:48,533 [Worker-110: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-10 18:54:48,535 [Worker-110: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspaces\Workspace_Test\Spring01\src\main\resources
+2021-08-10 18:54:48,536 [Worker-110: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-10 18:54:48,537 [Worker-110: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspaces\Workspace_Test\Spring01\src\test\resources
+2021-08-10 22:13:22,494 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Spring02:Spring02:0.0.1-SNAPSHOT @ C:\Workspaces\Workspace_Test\Spring02\pom.xml.
+2021-08-10 22:13:22,765 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Spring02/src
+2021-08-10 22:13:22,766 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Spring02/src/test/java because it overlaps with /Spring02/src
+2021-08-10 22:13:23,789 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-08-10 22:13:23,875 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Spring02:Spring02:0.0.1-SNAPSHOT @ C:\Workspaces\Workspace_Test\Spring02\pom.xml.
+2021-08-10 22:13:24,018 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Spring02/src
+2021-08-10 22:13:24,018 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Spring02/src/test/java because it overlaps with /Spring02/src
+2021-08-10 22:13:24,102 [Worker-137: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2021-08-10 22:13:24,239 [Worker-133: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-10 22:13:24,241 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspaces\Workspace_Test\Spring02\src\main\resources
+2021-08-10 22:13:24,244 [Worker-133: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-10 22:13:24,245 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspaces\Workspace_Test\Spring02\src\test\resources
