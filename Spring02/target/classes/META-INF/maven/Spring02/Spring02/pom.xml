@@ -1,16 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 
+ 
+  <!-- maven : 빌드와 배포를 관리해주는 툴이다. -->
+  <!-- 우리가 지금 사용하고 있는 maven version -->
   <modelVersion>4.0.0</modelVersion>
+  <!-- 배포할 때 이름 -->
   <groupId>Spring02</groupId>
   <artifactId>Spring02</artifactId>
+  <!-- 배포할때 버전 -->
   <version>0.0.1-SNAPSHOT</version>
+  <!-- maven build 설정이다. -->
   <build>
+  <!-- src아래에 소스가 들어갔다. -->
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
+      <!-- maven-compiler-plugin의 version은 3.8.1version이다. -->
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>11</release>
+          <release>11</release><!-- java 11ver가지고 컴파일 하겠다. -->
         </configuration>
       </plugin>
     </plugins>
