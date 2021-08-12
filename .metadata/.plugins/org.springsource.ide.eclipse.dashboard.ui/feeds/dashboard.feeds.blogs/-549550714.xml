@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-08-10T07:00:00Z</updated>
+  <updated>2021-08-12T11:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Neo4J CEO and Spring Data cofounder Emil Eifrem on graphs, Neo4J, and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/08/12/a-bootiful-podcast-neo4j-ceo-and-spring-data-cofounder-emil-eifrem-on-graphs-neo4j-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-08-12:4514</id>
+    <updated>2021-08-12T11:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this episode, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Neo4j CEO and Spring Data cofounder &lt;a href="https://twitter.com/emileifrem"&gt;Emil Eifrem (@emileifrem) &lt;/a&gt;. &lt;/p&gt;
+&lt;iframe title="Neo4J CEO and Spring Data cofounder Emil Eifrem on graphs, Neo4J, and more" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=j2vj4-10b23ae-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - August 10th, 2021</title>
     <link rel="alternate" href="https://spring.io/blog/2021/08/10/this-week-in-spring-august-10th-2021" />
@@ -621,21 +634,6 @@ class Person {&#xD;
     <updated>2021-07-14T23:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, I look at some key features made possible by the new Spring Integration 5.5 release, including the new Spring &lt;code&gt;.zip&lt;/code&gt; archive support and the new Spring Native hints supporting GraalVM native images&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/O17OjxBLVrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.3.9 and 5.2.16 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/07/14/spring-framework-5-3-9-and-5-2-16-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St?phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2021-07-14:4494</id>
-    <updated>2021-07-14T08:41:12Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.9&lt;/code&gt; and &lt;code&gt;5.2.16&lt;/code&gt; are available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.3.9&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.9"&gt;45 fixes and improvements&lt;/a&gt;. Spring Framework &lt;code&gt;5.2.16&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.16.RELEASE"&gt;12 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Stay tuned for follow-up Spring Boot releases next week.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.9/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
