@@ -8,8 +8,8 @@ public abstract class Car {
 	private String name;
 	
 
-	// 아래추상클래스의 일반 메소드이다.
-	public void CarFunction(String name, String brand) {
+	// Constructor
+	public Car(String brand, String name ) {
 		this.brand = brand;//간단한건데 이거 생각하면 편하다 대입연산자는 왼쪽걸 오른쪽에 대입하는거다.
 							//파라미터로 받은걸 필드값에 대입해주는것이다.
 		this.name = name;
