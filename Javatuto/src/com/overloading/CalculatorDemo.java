@@ -12,7 +12,7 @@ class Calculator{
 		this.two = two;
 	}
 	public void setOperands(int one, int two, int three) {
-		this.setOperands(one, two);
+		this.setOperands(one, two);//아래 중복되는 코드를 이렇게 수정하였다.
 		System.out.println("setOperands(int one, int two, int three)");
 //		this.one = one;
 //		this.two = two;
