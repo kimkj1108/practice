@@ -12,27 +12,36 @@ class Calculator{
 		this.two = two;
 	}
 	public void setOperands(int one, int two, int three) {
-		
+		this.setOperands(one, two);
 		System.out.println("setOperands(int one, int two, int three)");
-		this.one = one;
-		this.two = two;
+//		this.one = one;
+//		this.two = two;
+		
 		this.three = three;
 		}
 	public void sum() {
 		System.out.println(this.one+this.two+this.three);
 		}
 	public void avg() {
-		System.out.println(this.one+this.two+this.three/3);
+		if(this.three>1) {
+			System.out.println((this.one+this.two+this.three)/3);
+		}else {
+			System.out.println((this.one+this.two+this.three)/2);
+		}
 	}
-	public void avg() {
-		System.out.println(this.one+this.two/2);
-	}
+
 }	
 public class CalculatorDemo {
 	
 	public static void main(String[] args) {
 		Calculator c1 = new Calculator();
 		c1.setOperands(10, 20);
+		c1.sum();
+		c1.avg();
+		c1.setOperands(10, 20, 30);
+		c1.sum();
+		c1.avg();
+		
 		
 		
 	}
