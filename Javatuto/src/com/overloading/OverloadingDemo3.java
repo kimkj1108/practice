@@ -12,7 +12,7 @@ class Overloading{
 public class OverloadingDemo3 {
 //	Overloading ob = new Overloading();//왜 메인메서드 밖에 인스턴스 만든건 실행이 안될까?
 	public static void main(String[] args) {
-		Overloading ob = new Overloading();
+		Overloading ob = new Overloading();//Overloading클래스(설계도)를 구체화 시킨 인스턴스 ob.
 		ob.A();
 		ob.A(1);
 		ob.A("1");
