@@ -1,9 +1,0 @@
-package com.test01;
-
-public abstract class Car {
-	public void function(String brand_name) {
-		System.out.println(brand_name + "차는 달립니다.");
-	}
-	public abstract void feeling();
-	
-}

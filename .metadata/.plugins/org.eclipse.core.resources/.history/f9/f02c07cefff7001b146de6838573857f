@@ -1,8 +1,0 @@
-package com.object;
-
-public class CalculatorDemo {
-	public static void sum(int left, int right) {
-		System.out.println(left + right);
-	}
-
-}
