@@ -9,7 +9,7 @@ public class ScopeDemo2 {
 	}
 	
 	public static void main(String[] args) {
-		for(i = 1; i < 5; i++) {//변수 iㄴ 
+		for( i = 1; i < 5; i++) {//변수 i
 			a();//for문을 통해 i는 1로 변화된다 하지만 for문 안에서 a메소드가 실행되는 순간 i는 다시 0이된다.
 			System.out.println(i);
 			
