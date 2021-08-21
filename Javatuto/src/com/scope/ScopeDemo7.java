@@ -7,6 +7,7 @@ class C{
 		int v = 20;//지역변수
 					//지역변수의 우선순위가 더 높아서 해당 코드가 있으면 20이 출력된다.ㄴ
 		System.out.println(v);
+		System.out.println("this키워드 = "+this.v);
 	}
 	void n() {
 		System.out.println(v);
