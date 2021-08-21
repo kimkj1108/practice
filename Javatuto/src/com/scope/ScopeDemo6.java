@@ -8,9 +8,11 @@ public class ScopeDemo6 {
 		b();
 	}
 	static void b() {
+//		int i = 30;
 		System.out.println(i);
 	}
 	public static void main(String[] args) {
-		a();
+		a();//5가 나올거 같은데..실제로 5가 나왔다.
+//		b()클래스에 만약 i가 재정의 된다면 위의 출력 결과는 30이 된다.
 	}
 }
