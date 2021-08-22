@@ -37,4 +37,5 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.classninstance.Calculator"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
 </qualifiedTypeNameHistroy>
