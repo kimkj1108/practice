@@ -28,7 +28,7 @@ public class Test01 {
 		ResultSet rs = stmt.executeQuery(sql);
 		//Result 객체 = 
 		while(rs.next()) {
-			System.out.printf("%2d %10s %10s %6d %10s %7.2f %7.2f %3d \n",
+			System.out.printf("%2d %10s %10s %6d %10s %7.0f %7.2f %3d \n",
 					rs.getInt("EMPNO"),//위에 작성한 컬럼 이름이나
 					rs.getString(2),	//위에 작성한 컬럼 번호를 적는다.
 					rs.getString("JOB"),
