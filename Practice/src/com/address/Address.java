@@ -44,6 +44,26 @@ public class Address {
 			}
 		}
 	}
+	
+	private static void selectOne() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void insert() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void delete() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	private static void selectList() {
 		
