@@ -41,4 +41,6 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.constructor.calculatorDemo1"/>
+    <fullyQualifiedTypeName name="com.constructor.Calculator"/>
 </qualifiedTypeNameHistroy>

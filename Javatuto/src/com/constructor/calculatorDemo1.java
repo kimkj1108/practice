@@ -8,7 +8,7 @@ class Calculator{
 	//이것을 생성자(Constructor)라고 한다.
 	//생성자는
 	public Calculator(int left, int right) {
-		this.left = left;
+		this.left = left;//
 		this.right = right;
 	}
 	public void sum() {
