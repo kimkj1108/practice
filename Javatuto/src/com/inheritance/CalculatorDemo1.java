@@ -27,7 +27,15 @@ class SubstractionableCalculator extends Calculator{
 
 public class CalculatorDemo1 {
 	public static void main(String[] args) {
+		//SubstractionableCalculator클래스를 c1의 변수에 담아 인스턴스 화 시켰다.
 		SubstractionableCalculator c1 = new SubstractionableCalculator();
+		c1.setOprands(10, 20);
+		c1.sum();
+		c1.avg();
+		//위의 메소드는 해당클래스에는 없다.
+		//하지만 상위 클래스에는 있다.
+		c1.substract();
+		
 	}
 	
 }
