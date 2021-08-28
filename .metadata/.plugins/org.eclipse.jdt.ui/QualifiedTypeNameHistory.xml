@@ -44,4 +44,6 @@
     <fullyQualifiedTypeName name="com.constructor.calculatorDemo1"/>
     <fullyQualifiedTypeName name="com.constructor.Calculator"/>
     <fullyQualifiedTypeName name="com.inheritance.Calculator"/>
+    <fullyQualifiedTypeName name="com.inheritance.MultiplicationalbeCalculator"/>
+    <fullyQualifiedTypeName name="com.inheritance.DivisAbleCal"/>
 </qualifiedTypeNameHistroy>
