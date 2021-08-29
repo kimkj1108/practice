@@ -39,11 +39,11 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.constructor.calculatorDemo1"/>
     <fullyQualifiedTypeName name="com.constructor.Calculator"/>
     <fullyQualifiedTypeName name="com.inheritance.Calculator"/>
     <fullyQualifiedTypeName name="com.inheritance.MultiplicationalbeCalculator"/>
     <fullyQualifiedTypeName name="com.inheritance.DivisAbleCal"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
