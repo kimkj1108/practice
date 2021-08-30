@@ -7,7 +7,7 @@ public class ConstructorDemo {
 	
 	//2.만약 아래와 같이 매개변수가 있고 클래스명과 같은 생성자를 만들면
 	//자바는 암시적으로 기본생성자를 만들지 않는다.
-	public ConstructorDemo(int a) {}
+	public ConstructorDemo(int a) {} 
 	public static void main(String[] args) {
 		ConstructorDemo c = new ConstructorDemo();
 	}

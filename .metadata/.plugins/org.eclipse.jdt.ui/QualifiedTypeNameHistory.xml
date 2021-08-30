@@ -46,4 +46,5 @@
     <fullyQualifiedTypeName name="com.inheritance.DivisAbleCal"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.inheritance.example.ConstructorDemo"/>
 </qualifiedTypeNameHistroy>
