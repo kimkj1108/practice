@@ -47,4 +47,7 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.inheritance.example.ConstructorDemo"/>
+    <fullyQualifiedTypeName name="com.inheritance.example.ConstructorDemo2.Calculator"/>
+    <fullyQualifiedTypeName name="com.inheritance.example.Calculator"/>
+    <fullyQualifiedTypeName name="com.inheritance.example.SubstractCal"/>
 </qualifiedTypeNameHistroy>
