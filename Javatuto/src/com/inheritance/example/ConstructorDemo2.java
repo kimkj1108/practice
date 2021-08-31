@@ -27,7 +27,7 @@ package com.inheritance.example;
 		public void substract() {
 			System.out.println(this.left - this.right);
 		}
-		
+	
 	}
 	public class ConstructorDemo2 {
 		public static void main(String[] args) {
