@@ -210,8 +210,13 @@ public class Member {
 	}
 
 	private static void selectOne() {
-		// TODO Auto-generated method stub
-		
+		//1.dirver연결
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private static void selectList() {
