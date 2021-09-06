@@ -1,5 +1,9 @@
 package com.db;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Member {
@@ -8,6 +12,8 @@ public class Member {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
+		
+		//선택, 수정, 삭제 기준은 "이름".
 		while(true) {
 			System.out.println("번호선택");
 			System.out.println("1: 전체출력");
@@ -50,6 +56,85 @@ public class Member {
 	//3. query준비
 	//4. query실행 및 리턴
 	//5. db 종료
+
+	private static void delete() {
+		//1. driver 연결
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		//2. 계정연결
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "kh";
+		String pw ="kh1";
+		Connection con = null;
+		
+		try {
+			con = DriverManager.getConnection(url, user, pw);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		//3. query준비
+		System.out.println("삭제할 이름: ");
+		String name = sc.next();
+		String sql = " DELETE FROM MEMBER "
+				+ "	WHERE NAME = ? ";
+		
+		PreparedStatement pstm = null;
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, name);
+		//4. query실행 및 리턴
+			int res = pstm.executeUpdate();
+			if (res > 0) {
+				System.out.println("삭제 성공");
+			}else {
+				System.out.println("삭제 실패");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			//5. db 종료
+			try {
+				pstm.close();
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	private static void update() {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "kh";
+		String pw = "kh1";
+		
+		Connection con = DriverManager.getConnection(url,user,pw);
+		
+	}
+
+	private static void insert() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void selectOne() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void selectList() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
