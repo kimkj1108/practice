@@ -116,8 +116,53 @@ public class Member {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "kh";
 		String pw = "kh1";
+		Connection con = null;
+		try {
+			//Connection con = DriverManager.getConnection(url,user,pw);
+			// 위처럼 만들면 con변수를 try외부에서 사용못하더라
+			con = DriverManager.getConnection(url,user,pw);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		System.out.println("수정할 이름");
+		String name = sc.next();
+		System.out.println("수정할 전번");
+		String phone = sc.next();
+		System.out.println("수정할 주소");
+		String addr = sc.next();
+		System.out.println("수정할 이멜");
+		String email = sc.next();
 		
-		Connection con = DriverManager.getConnection(url,user,pw);
+		String sql = " UPDATE MEMBER "
+				+ " SET PHONE = ?, SET ADDR = ?, SET EMAIL = ? "
+				+ " WHERE NAME = ? ";
+		PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, phone);
+			pstm.setString(2, addr);
+			pstm.setString(3, email);
+			pstm.setString(4, name);
+			
+			int res = pstm.executeUpdate();//해당 코드에 대해서도 찾아볼 필요가 있다.
+			if(res >0) {
+				System.out.println("수정성공");
+			}else {
+				System.out.println("수정실패");
+			}
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				pstm.close();
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 		
 	}
 
