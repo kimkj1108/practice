@@ -188,9 +188,24 @@ public class Member {
 		System.out.println("입력할 이름: ");
 		String name = sc.next();
 		System.out.println("입력할 번호: ");
+		String phone = sc.next();
 		System.out.println("입력할 주소: ");
+		String addr = sc.next();
 		System.out.println("입력할 이멜: ");
+		String email = sc.next();
 		
+		String sql = " INSERT INTO ADDRESS "
+				+ " VLAUES (?, ?, ?, ?) ";
+		
+		PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
