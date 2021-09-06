@@ -167,7 +167,30 @@ public class Member {
 	}
 
 	private static void insert() {
-		// TODO Auto-generated method stub
+		//1.driver연결
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		//2. 계정연결
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "kh";
+		String pw = "kh1";
+		Connection con = null;
+		
+		try {
+			con = DriverManager.getConnection(url, user, pw);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		//3.query 준비
+		System.out.println("입력할 이름: ");
+		String name = sc.next();
+		System.out.println("입력할 번호: ");
+		System.out.println("입력할 주소: ");
+		System.out.println("입력할 이멜: ");
+		
 		
 	}
 
