@@ -7,14 +7,14 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Member {
-	
-	//스캐너 객체 생성.
+
+	// 스캐너 객체 생성.
 	static Scanner sc = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
-		
-		//선택, 수정, 삭제 기준은 "이름".
-		while(true) {
+
+		// 선택, 수정, 삭제 기준은 "이름".
+		while (true) {
 			System.out.println("번호선택");
 			System.out.println("1: 전체출력");
 			System.out.println("2: 선택출력");
@@ -22,10 +22,10 @@ public class Member {
 			System.out.println("4: 수정");
 			System.out.println("5: 삭제");
 			System.out.println("6: 종료");
-			
+
 			int select = sc.nextInt();
-			
-			switch(select){
+
+			switch (select) {
 			case 1:
 				System.out.println("전체출력");
 				selectList();
@@ -51,53 +51,52 @@ public class Member {
 			}
 		}
 	}
-	//1. driver 연결
-	//2. 계정연결
-	//3. query준비
-	//4. query실행 및 리턴
-	//5. db 종료
+	// 1. driver 연결
+	// 2. 계정연결
+	// 3. query준비
+	// 4. query실행 및 리턴
+	// 5. db 종료
 
 	private static void delete() {
-		//1. driver 연결
+		// 1. driver 연결
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		
-		//2. 계정연결
+
+		// 2. 계정연결
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "kh";
-		String pw ="kh1";
+		String pw = "kh1";
 		Connection con = null;
-		
+
 		try {
 			con = DriverManager.getConnection(url, user, pw);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-		//3. query준비
+
+		// 3. query준비
 		System.out.println("삭제할 이름: ");
 		String name = sc.next();
-		String sql = " DELETE FROM MEMBER "
-				+ "	WHERE NAME = ? ";
-		
+		String sql = " DELETE FROM MEMBER " + "	WHERE NAME = ? ";
+
 		PreparedStatement pstm = null;
 		try {
 			pstm = con.prepareStatement(sql);
 			pstm.setString(1, name);
-		//4. query실행 및 리턴
+			// 4. query실행 및 리턴
 			int res = pstm.executeUpdate();
 			if (res > 0) {
 				System.out.println("삭제 성공");
-			}else {
+			} else {
 				System.out.println("삭제 실패");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}finally {
-			//5. db 종료
+		} finally {
+			// 5. db 종료
 			try {
 				pstm.close();
 				con.close();
@@ -118,9 +117,9 @@ public class Member {
 		String pw = "kh1";
 		Connection con = null;
 		try {
-			//Connection con = DriverManager.getConnection(url,user,pw);
+			// Connection con = DriverManager.getConnection(url,user,pw);
 			// 위처럼 만들면 con변수를 try외부에서 사용못하더라
-			con = DriverManager.getConnection(url,user,pw);
+			con = DriverManager.getConnection(url, user, pw);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -132,30 +131,27 @@ public class Member {
 		String addr = sc.next();
 		System.out.println("수정할 이멜");
 		String email = sc.next();
-		
-		String sql = " UPDATE MEMBER "
-				+ " SET PHONE = ?, SET ADDR = ?, SET EMAIL = ? "
-				+ " WHERE NAME = ? ";
+
+		String sql = " UPDATE MEMBER " + " SET PHONE = ?, SET ADDR = ?, SET EMAIL = ? " + " WHERE NAME = ? ";
 		PreparedStatement pstm = null;
-		
+
 		try {
 			pstm = con.prepareStatement(sql);
 			pstm.setString(1, phone);
 			pstm.setString(2, addr);
 			pstm.setString(3, email);
 			pstm.setString(4, name);
-			
-			int res = pstm.executeUpdate();//해당 코드에 대해서도 찾아볼 필요가 있다.
-			if(res >0) {
+
+			int res = pstm.executeUpdate();// 해당 코드에 대해서도 찾아볼 필요가 있다.
+			if (res > 0) {
 				System.out.println("수정성공");
-			}else {
+			} else {
 				System.out.println("수정실패");
 			}
-			
-			
+
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			try {
 				pstm.close();
 				con.close();
@@ -163,11 +159,52 @@ public class Member {
 				e.printStackTrace();
 			}
 		}
-		
+
 	}
 
 	private static void insert() {
-		//1.driver연결
+		// 1.driver연결
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		// 2. 계정연결
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "kh";
+		String pw = "kh1";
+		Connection con = null;
+
+		try {
+			con = DriverManager.getConnection(url, user, pw);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// 3.query 준비
+		System.out.println("입력할 이름: ");
+		String name = sc.next();
+		System.out.println("입력할 번호: ");
+		String phone = sc.next();
+		System.out.println("입력할 주소: ");
+		String addr = sc.next();
+		System.out.println("입력할 이멜: ");
+		String email = sc.next();
+
+		String sql = " INSERT INTO ADDRESS " + " VLAUES (?, ?, ?, ?) ";
+
+		PreparedStatement pstm = null;
+
+		try {
+			pstm = con.prepareStatement(sql);
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void selectOne() {
+		// 1.dirver연결
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
@@ -177,52 +214,19 @@ public class Member {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "kh";
 		String pw = "kh1";
+		
 		Connection con = null;
-		
 		try {
-			con = DriverManager.getConnection(url, user, pw);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		//3.query 준비
-		System.out.println("입력할 이름: ");
-		String name = sc.next();
-		System.out.println("입력할 번호: ");
-		String phone = sc.next();
-		System.out.println("입력할 주소: ");
-		String addr = sc.next();
-		System.out.println("입력할 이멜: ");
-		String email = sc.next();
-		
-		String sql = " INSERT INTO ADDRESS "
-				+ " VLAUES (?, ?, ?, ?) ";
-		
-		PreparedStatement pstm = null;
-		
-		try {
-			pstm = con.prepareStatement(sql);
-			
-			
+			con = DriverManager.getConnection(url,user,pw);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-	}
-
-	private static void selectOne() {
-		//1.dirver연결
-		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 	private static void selectList() {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
 
 }
