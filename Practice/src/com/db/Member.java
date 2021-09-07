@@ -221,6 +221,12 @@ public class Member {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		//3. query 준비
+		String name = sc.next();//이름기준검색
+		String sql = " SELECT NAME, PHONE, ADDR, EMAIL "
+				+ " FROM MEMBER "
+				+ " WHERE NAME = ? ";
+		
 		
 	}
 
