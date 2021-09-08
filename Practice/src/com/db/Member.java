@@ -193,7 +193,7 @@ public class Member {
 		System.out.println("입력할 이멜: ");
 		String email = sc.next();
 
-		String sql = " INSERT INTO MEMBER " + " VALUE (?, ?, ?, ?) ";
+		String sql = " INSERT INTO MEMBER " + " VALUES (?, ?, ?, ?) ";
 
 		PreparedStatement pstm = null;
 
