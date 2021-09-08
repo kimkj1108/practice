@@ -225,3 +225,149 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://dl
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2021-09-08 20:47:50.020
 !MESSAGE No repository found at http://dl.bintray.com/nodeclipse/nodeclipse/1.0.2f/.
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-09-08 20:55:34.978
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 20:56:10.441
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 20:59:38.386
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:01:58.371
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:19:04.539
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:19:17.952
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:24:25.467
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:24:34.799
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:24:39.410
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:28:01.969
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:28:09.898
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.debug 4 4 2021-09-08 21:28:12.035
+!MESSAGE unexpected error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:967)
+	at org.eclipse.ui.internal.console.ConsoleDocument.get(ConsoleDocument.java:29)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker$1.getContents(PythonConsoleLineTracker.java:156)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.lineAppended(PythonConsoleLineTracker.java:200)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

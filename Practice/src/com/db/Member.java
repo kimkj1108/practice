@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Scanner;
 
 public class Member {
@@ -34,6 +35,7 @@ public class Member {
 			case 2:
 				System.out.println("선택출력");
 				selectOne();
+				break;
 			case 3:
 				System.out.println("추가");
 				insert();
@@ -191,15 +193,37 @@ public class Member {
 		System.out.println("입력할 이멜: ");
 		String email = sc.next();
 
-		String sql = " INSERT INTO ADDRESS " + " VLAUES (?, ?, ?, ?) ";
+		String sql = " INSERT INTO MEMBER " + " VALUE (?, ?, ?, ?) ";
 
 		PreparedStatement pstm = null;
 
 		try {
 			pstm = con.prepareStatement(sql);
+			pstm.setString(1, name);
+			pstm.setString(2, phone);
+			pstm.setString(3, addr);
+			pstm.setString(4, email);
+			
+			//4.query실행 및 리턴
+			int res = pstm.executeUpdate();
+			if(res>0) {
+				System.out.println("추가성공");
+			}else {
+				System.out.println("추가실패");
+			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
+			//5.db종료
+		}
+		finally {
+			try {
+				pstm.close();
+				con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 	}
@@ -211,32 +235,104 @@ public class Member {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		//2. 계정연결
+		// 2. 계정연결
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "kh";
 		String pw = "kh1";
-		
+
 		Connection con = null;
 		try {
-			con = DriverManager.getConnection(url,user,pw);
+			con = DriverManager.getConnection(url, user, pw);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		//3. query 준비
-		String name = sc.next();//이름기준검색
-		String sql = " SELECT NAME, PHONE, ADDR, EMAIL "
-				+ " FROM MEMBER "
-				+ " WHERE NAME = ? ";
+		// 3. query 준비
+		System.out.println("선택출력할 이름 입력 : ");
+		String name = sc.next();// 이름기준검색
+		String sql = " SELECT NAME, PHONE, ADDR, EMAIL " + " FROM MEMBER " + " WHERE NAME = ? ";
 		PreparedStatement pstm = null;
-		ResultSet rs = null;
-		pstm = con.prepareStatement(sql);
+		ResultSet rs = null;// ResultSet을 왜 써야 하는지 기억이 나지 않는다.
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, name);
+
+			// 4.query실행 및 리턴
+			rs = pstm.executeQuery();
+			while (rs.next()) {
+				System.out.println(rs.getString("NAME") + " \t " + rs.getString("PHONE") + " \t " + rs.getString("ADDR")
+						+ " \t " + rs.getString("EMAIL"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		
-		
+		finally {
+			// 5.db종료
+			try {
+				rs.close();
+				pstm.close();
+				con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
 	}
 
 	private static void selectList() {
-		// TODO Auto-generated method stub
+		// 1.
+				try {
+					Class.forName("oracle.jdbc.driver.OracleDriver");
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				}
+				
+				// 2.
+				String url = "jdbc:oracle:thin:@localhost:1521:xe";
+				String user = "kh";
+				String password = "kh1";
+				Connection con = null;
+				
+				try {
+					con = DriverManager.getConnection(url, user, password);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				
+				// 3.
+				String sql = " SELECT NAME, PHONE, ADDR, EMAIL FROM MEMBER ORDER BY NAME ";
+				
+				Statement stmt = null;
+				//Statement stmt = con.CreateStatement();
+				//위 값은 기본값인 null로 해놓고 
+				//try안에서 한번 더 재정의 했다.
+				ResultSet rs = null;
+				
+				try {
+					stmt = con.createStatement();
+					
+					// 4.
+					rs = stmt.executeQuery(sql);
+					while (rs.next()) {
+						System.out.println(rs.getString(1) + " \t " 
+										 + rs.getString(2) + " \t " 
+										 + rs.getString(3) + " \t "
+										 + rs.getString(4));
+					}
 
-	}
-
+				} catch (SQLException e) {
+					e.printStackTrace();
+				} finally {
+					// 5.
+					try {
+						rs.close();
+						stmt.close();
+						con.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+				}
+	
+			}
 }
