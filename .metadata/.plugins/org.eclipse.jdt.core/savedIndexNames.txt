@@ -2,7 +2,6 @@ INDEX VERSION 1.131+C:\Workspaces\Workspace_Test\.metadata\.plugins\org.eclipse.
 2444507313.index
 378929618.index
 4014466734.index
-3717477917.index
 1050410711.index
 3924216511.index
 1748392069.index
