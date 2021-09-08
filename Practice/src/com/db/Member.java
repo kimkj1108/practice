@@ -229,7 +229,7 @@ public class Member {
 	}
 
 	private static void selectOne() {
-		// 1.dirver연결
+		// 1.driver 연결
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
@@ -273,7 +273,6 @@ public class Member {
 				pstm.close();
 				con.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
