@@ -25,10 +25,8 @@ public class JDBCTemplate {
 		
 		try {
 			con = DriverManager.getConnection(url, user, pw);
-			//자동으로 commit되는 것을 해제한다.
 			con.setAutoCommit(false);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -45,7 +43,6 @@ public class JDBCTemplate {
 		try {
 			stmt.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -53,7 +50,20 @@ public class JDBCTemplate {
 		try {
 			con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public static void commit(Connection con) {
+		try {
+			con.commit();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void rollback(Connection con) {
+		try {
+			con.rollback();
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
