@@ -77,25 +77,46 @@ public class HomeDao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
+		} finally {
 			close(rs);
 			close(pstm);
 			close(con);
-			
+
 		}
 
 		return dto;
 	}
-	//추가
+
+	// 추가
 	public int insert(HomeDto dto) {
-		//1.
-		//2.
+		// 1.
+		// 2.
 		Connection con = getConnection();
-		
-		//3.
-		String sql = " INSERT INTO HOME "
-				+ " VALUES";
-		
-		return 0;
+
+		// 3.
+		String sql = " INSERT INTO HOME " + " VALUES HOMESEQ.NEXTVAL, ?, ? ";
+		PreparedStatement pstm = null;
+		int res = 0;
+
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, dto.getH_name());
+			pstm.setString(2, dto.getH_job());
+
+			// 4.
+			res = pstm.executeUpdate();
+			if(res>0) {
+				commit(con);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			//5.
+			close(pstm);
+			close(con);
+		}
+
+		return res;
 	}
 }
