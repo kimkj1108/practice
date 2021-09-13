@@ -105,18 +105,69 @@ public class HomeDao {
 
 			// 4.
 			res = pstm.executeUpdate();
-			if(res>0) {
+			if (res > 0) {
 				commit(con);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
-			//5.
+		} finally {
+			// 5.
 			close(pstm);
 			close(con);
 		}
 
 		return res;
 	}
+
+	// 수정
+	public int update(HomeDto dto) {
+		// 1.
+		// 2.
+		Connection con = getConnection();
+
+		// 3.
+		String sql = " UPDATE HOME " + " SET H_NAME = ?, SET H_JOB = ? " + " WHERE H_NUM = ? ";
+		PreparedStatement pstm = null;
+		int res = 0;
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, dto.getH_name());
+			pstm.setString(2, dto.getH_job());
+			pstm.setInt(3, dto.getH_num());
+
+			// 4.
+			// 업데이트 쿼리를 이용하기 때문에 갯수를 리턴 받을 것이다.
+			// 나는 위의 주석을 어떤 의미로 달았는지 기억이 나지 않는다
+			// 젠장...
+			res = pstm.executeUpdate();
+			if (res > 0) {
+				commit(con);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			close(pstm);
+			close(con);
+		}
+		return res;
+	}
+	//삭제
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
