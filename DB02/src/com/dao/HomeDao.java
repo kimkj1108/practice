@@ -154,6 +154,37 @@ public class HomeDao {
 		return res;
 	}
 	//삭제
+	public int delete(int h_num) {
+		//1.
+		//2.
+		Connection con = getConnection();
+		
+		//3.
+		String sql = " DELETE FROM HOME "
+				+ " WHERE H_NUM = ? ";
+		PreparedStatement pstm = null;
+		int res = 0;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setInt(1, h_num);
+			
+			//4.
+			res = pstm.executeUpdate();
+			if(res > 0) {
+				commit(con);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			//5.
+			close(pstm);
+			close(con);
+		}
+			
+		return res;
+	}
 }
 
 
