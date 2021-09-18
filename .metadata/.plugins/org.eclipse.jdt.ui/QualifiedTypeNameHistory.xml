@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="sun.font.StrikeCache"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.test.Parean"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -55,5 +54,7 @@
     <fullyQualifiedTypeName name="java.beans.Statement"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.dto.HomeDto"/>
     <fullyQualifiedTypeName name="com.dao.HomeDao"/>
 </qualifiedTypeNameHistroy>
