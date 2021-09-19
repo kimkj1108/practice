@@ -45,7 +45,6 @@
     <fullyQualifiedTypeName name="com.inheritance.example.ConstructorDemo2.Calculator"/>
     <fullyQualifiedTypeName name="com.inheritance.example.Calculator"/>
     <fullyQualifiedTypeName name="com.inheritance.example.SubstractCal"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.StrictMath"/>
     <fullyQualifiedTypeName name="oracle.jdbc.driver.OracleDriver"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -57,4 +56,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.dto.HomeDto"/>
     <fullyQualifiedTypeName name="com.dao.HomeDao"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 </qualifiedTypeNameHistroy>
