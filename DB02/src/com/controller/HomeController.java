@@ -11,7 +11,9 @@ public class HomeController {
 		StringBuffer sb = new StringBuffer();
 		sb.append("****\n").append("1.전체출력\n").append("2.선택출력\n")
 		.append("3.추   가\n").append("4.수   정\n").append("5.삭   제\n").append("6.종   료\n").append("input select\n");
-		
-		return 0;
+		System.out.println(sb);//sb에 각 메뉴를 주르륵 출력하게 하였고 이것을 출력하였다
+		int select  = sc.nextInt();//int 타입 select라는 변수에 스케너를 통해 입력받은 값을 대입.
+		return select;
 	}
+	
 }
