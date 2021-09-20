@@ -2,6 +2,8 @@ package com.controller;
 
 import java.util.Scanner;
 
+import com.dto.HomeDto;
+
 //화면 제어
 public class HomeController {
 	
@@ -15,5 +17,11 @@ public class HomeController {
 		int select  = sc.nextInt();//int 타입 select라는 변수에 스케너를 통해 입력받은 값을 대입.
 		return select;
 	}
+	//선택출력
+	public HomeDto selectOne(int h_num) {
+		
+		return null;
+	}
+	//추가
 	
 }
