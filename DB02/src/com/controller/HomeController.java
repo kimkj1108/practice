@@ -26,6 +26,13 @@ public class HomeController {
 	public int insert(HomeDto dto) {
 		return 0;
 	}
+	//삭제
+	public int delete(int h_num) {
+		return 0;
+	}
+	public static void main(String[] args) {
+		
+	}
 	
 	
 }
