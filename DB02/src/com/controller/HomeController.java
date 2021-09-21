@@ -23,5 +23,9 @@ public class HomeController {
 		return null;
 	}
 	//추가
+	public int insert(HomeDto dto) {
+		return 0;
+	}
+	
 	
 }
