@@ -45,8 +45,16 @@ public class HomeController {
 				List<HomeDto> list = biz.selectList();
 				for (HomeDto dto : list) {
 					System.out.println(dto);
-					break;
 				}
+				break;
+			case 2:
+				System.out.println("선택출력");
+				System.out.println("출력할 번호 : ");
+				int h_num = sc.nextInt();
+				HomeDto selectOneDto = biz.selectOne(h_num);
+				System.out.println(selectOneDto);
+				break;
+				
 			}
 		}
 		
