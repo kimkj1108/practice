@@ -74,7 +74,15 @@ public class HomeController {
 					System.out.println("추가 실패!");
 				}
 				break;
-			
+			case 4:
+				System.out.println("수정");
+				System.out.println("수정할 번호 : ");
+				int update_h_num = sc.nextInt();
+				System.out.println("수정할 이름 : ");
+				String update_h_name = sc.next();
+				System.out.println("수정할 직업 : ");
+				String update_h_job = sc.next();
+				HomeDto updateDto = new HomeDto();
 			}
 		}
 

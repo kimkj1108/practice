@@ -57,6 +57,6 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.dto.HomeDto"/>
     <fullyQualifiedTypeName name="com.biz.HomeBiz"/>
+    <fullyQualifiedTypeName name="com.dto.HomeDto"/>
 </qualifiedTypeNameHistroy>
