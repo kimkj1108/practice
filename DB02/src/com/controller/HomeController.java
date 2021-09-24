@@ -82,7 +82,20 @@ public class HomeController {
 				String update_h_name = sc.next();
 				System.out.println("수정할 직업 : ");
 				String update_h_job = sc.next();
-				HomeDto updateDto = new HomeDto();
+				HomeDto updateDto = new HomeDto(update_h_num, update_h_name, update_h_job);
+				
+				int updateRes = biz.update(updateDto);
+				if(updateRes > 0) {
+					System.out.println("수정성공!");
+				}else {
+					System.out.println("수정실패..ㅠㅠ");
+				}
+				break;
+				
+				case 5:
+					System.out.println("삭제!");
+					System.out.println("삭제할 번호 : ");
+					int  
 			}
 		}
 
