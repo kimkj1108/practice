@@ -95,7 +95,10 @@ public class HomeController {
 				case 5:
 					System.out.println("삭제!");
 					System.out.println("삭제할 번호 : ");
-					int  
+					int delete_h_num = sc.nextInt();
+					
+					int deleteRes = biz.delete(delete_h_num);
+					
 			}
 		}
 
