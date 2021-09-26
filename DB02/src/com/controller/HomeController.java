@@ -98,7 +98,14 @@ public class HomeController {
 					int delete_h_num = sc.nextInt();
 					
 					int deleteRes = biz.delete(delete_h_num);
-					
+					if(deleteRes > 0) {
+						System.out.println("삭제성공");
+					}else {
+						System.out.println("삭제실패");
+					}
+				case 6:
+					System.out.println("종료");
+					break;
 			}
 		}
 
