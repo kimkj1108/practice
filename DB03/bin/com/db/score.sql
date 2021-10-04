@@ -1,2 +1,5 @@
 DROP TABLE SCORE;
-CTEATE TABLE          
+CTEATE TABLE(
+
+
+);
