@@ -1,5 +1,5 @@
 DROP TABLE SCORE;
 CTEATE TABLE(
-
+12
 
 );

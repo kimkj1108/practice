@@ -649,7 +649,7 @@
       <children xsi:type="basic:PartStack" xmi:id="_NlLQghRXEey_97xac7W3qw" elementId="PartStack@4c614fa5" selectedElement="_pXQCQCEmEeyW4IYk-a8yfQ">
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_pXQCQCEmEeyW4IYk-a8yfQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="score.sql" iconURI="platform:/plugin/org.eclipse.datatools.sqltools.sqlscrapbook/images/qrydoc.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot; name=&quot;score.sql&quot; partName=&quot;score.sql&quot; title=&quot;score.sql&quot; tooltip=&quot;DB03/src/com/db/score.sql&quot;>&#xD;&#xA;&lt;input connInfoName=&quot;Oracle_0.2.0.2.0 - 64bit Production:New Oracle::&quot; editorInputType=&quot;SQLScrapbookEditorInput&quot; factoryID=&quot;org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory&quot; path=&quot;/DB03/src/com/db/score.sql&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;41&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot; name=&quot;score.sql&quot; partName=&quot;score.sql&quot; title=&quot;score.sql&quot; tooltip=&quot;DB03/src/com/db/score.sql&quot;>&#xD;&#xA;&lt;input connInfoName=&quot;Oracle_0.2.0.2.0 - 64bit Production:New Oracle::&quot; editorInputType=&quot;SQLScrapbookEditorInput&quot; factoryID=&quot;org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory&quot; path=&quot;/DB03/src/com/db/score.sql&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;36&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor</tags>
@@ -958,7 +958,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_NlL4bhRXEey_97xac7W3qw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_U6yAcCPLEeySWNg2BaZEdw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_NlVDQxRXEey_97xac7W3qw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_VgC9MCXaEeyHRLXSjDFVww" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_NlVDQxRXEey_97xac7W3qw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_NlL4exRXEey_97xac7W3qw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1016,7 +1016,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_NlMenBRXEey_97xac7W3qw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_U61DwCPLEeySWNg2BaZEdw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_NlVC6hRXEey_97xac7W3qw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_VgIcwCXaEeyHRLXSjDFVww" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_NlVC6hRXEey_97xac7W3qw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_NlMepxRXEey_97xac7W3qw" elementId="org.nodeclipse.ui.editors.NodeEditor.json" visible="false">
         <tags>Draggable</tags>
